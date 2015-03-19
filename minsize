@@ -1,0 +1,7 @@
+#!/bin/bash
+# minsize - A TTY re-size escape sequence for use with mintty Cygwin
+# Usage: minsize <width> <height>
+# see: http://invisible-island.net/xterm/ctlseqs/ctlseqs.html
+export WIDTH=$1
+export HEIGHT=$2
+echo -en "\e[8;${HEIGHT};${WIDTH}t";
